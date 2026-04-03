@@ -5,7 +5,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { buttonVariants } from "../ui/button";
 import { TypeAnimation } from "react-type-animation";
-import { FaInstagram, FaYoutube, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaFacebook, FaGithub } from "react-icons/fa";
 import heroImage from "../../assets/Hero-man.jpeg";
 
 export const HeroSection = () => {
@@ -86,8 +86,8 @@ export const HeroSection = () => {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="text-lg md:text-xl text-muted-foreground mb-10 max-w-xl leading-relaxed"
             >
-              I craft tailored, elegant, and highly performant web applications.
-              Let's turn your ideas into a beautiful digital reality.
+              Kita cuma manusia biasa, merubah diri sendiri saja kadang
+              kewalahan, apalagi mencoba merubah orang lain
             </motion.p>
 
             <motion.div
@@ -134,22 +134,36 @@ export const HeroSection = () => {
               className="flex items-center gap-4 justify-center lg:justify-start"
             >
               <a
-                href="#"
+                href="https://www.instagram.com/sy_hasyim/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 rounded-full bg-muted/50 hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110 shadow-sm"
               >
                 <FaInstagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@syarifhasyim3879"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 rounded-full bg-muted/50 hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110 shadow-sm"
               >
                 <FaYoutube size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/syarif.hasyim.30"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 rounded-full bg-muted/50 hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110 shadow-sm"
               >
                 <FaFacebook size={20} />
+              </a>
+              <a
+                href="https://github.com/syHasyimm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-muted/50 hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110 shadow-sm"
+              >
+                <FaGithub size={20} />
               </a>
             </motion.div>
           </motion.div>

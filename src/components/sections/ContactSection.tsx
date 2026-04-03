@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
-import { PaperAirplaneIcon as Send, MapPinIcon as MapPin, EnvelopeIcon as Mail, PhoneIcon as Phone } from "@heroicons/react/24/outline";
+import {
+  PaperAirplaneIcon as Send,
+  MapPinIcon as MapPin,
+  EnvelopeIcon as Mail,
+  PhoneIcon as Phone,
+} from "@heroicons/react/24/outline";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
@@ -87,9 +92,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="font-medium">
-                      Pasir Pengaraian, Pasir Pandak
-                    </p>
+                    <p className="font-medium">Kepenuhan Timur, Pasir Pandak</p>
                   </div>
                 </div>
               </div>
