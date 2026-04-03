@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Send, MapPin, Mail, Phone } from "lucide-react";
+import { PaperAirplaneIcon as Send, MapPinIcon as MapPin, EnvelopeIcon as Mail, PhoneIcon as Phone } from "@heroicons/react/24/outline";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
@@ -63,7 +63,7 @@ export const ContactSection = () => {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-full text-primary">
-                    <Mail size={20} />
+                    <Mail className="h-5 w-5" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
@@ -73,7 +73,7 @@ export const ContactSection = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-full text-primary">
-                    <Phone size={20} />
+                    <Phone className="h-5 w-5" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
@@ -83,7 +83,7 @@ export const ContactSection = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-full text-primary">
-                    <MapPin size={20} />
+                    <MapPin className="h-5 w-5" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { ExternalLink } from "lucide-react"
+import { ArrowTopRightOnSquareIcon as ExternalLink } from "@heroicons/react/24/outline"
 import { FaGithub } from "react-icons/fa"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card"
 import { buttonVariants } from "../ui/button"

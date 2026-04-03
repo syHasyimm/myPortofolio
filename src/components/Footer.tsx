@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react"
+import { HeartIcon as Heart } from "@heroicons/react/24/solid"
 import { FaGithub, FaLinkedin, FaTwitter, FaDribbble } from "react-icons/fa"
 
 export const Footer = () => {
@@ -41,7 +41,7 @@ export const Footer = () => {
             &copy; {new Date().getFullYear()} Hasyim. All rights reserved.
           </p>
           <p className="flex items-center">
-            Made with <Heart size={14} className="mx-1 text-red-500" /> globally.
+            Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> globally.
           </p>
         </div>
       </div>

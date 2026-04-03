@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Menu, X, Moon, Sun } from "lucide-react"
+import { Bars3Icon as Menu, XMarkIcon as X, MoonIcon as Moon, SunIcon as Sun } from "@heroicons/react/24/outline"
 import { motion, AnimatePresence } from "framer-motion"
 import { useTheme } from "./theme-provider"
 import { Button } from "./ui/button"
@@ -54,7 +54,7 @@ export const Navbar = () => {
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="rounded-full"
           >
-            {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+            {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
           </Button>
         </div>
 
@@ -66,13 +66,13 @@ export const Navbar = () => {
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="rounded-full"
           >
-            {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+            {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
           </Button>
           <button
             className="text-foreground focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
