@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import { BriefcaseIcon, CheckBadgeIcon, CodeBracketIcon, PaintBrushIcon } from "@heroicons/react/24/outline"
 import { FaReact, FaLaravel, FaPhp } from "react-icons/fa"
 import { SiNextdotjs, SiJavascript, SiMysql } from "react-icons/si"
+import aboutImage from "../../assets/About.jpeg"
 
 const techStack = [
   { name: "Laravel", icon: FaLaravel, color: "text-red-500" },
@@ -22,8 +23,8 @@ export const AboutSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex flex-col md:flex-row gap-12 items-center mb-20">
-            <div className="w-full md:w-1/2">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center mb-20">
+            <div className="w-full lg:w-1/2">
               <h2 className="text-3xl md:text-5xl font-bold font-outfit mb-6">
                 About Me
               </h2>
@@ -38,7 +39,7 @@ export const AboutSection = () => {
                 I treat every project as a canvas waiting for the perfect stroke of code.
               </p>
               
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   { label: "Experience", value: "3+ Years", icon: BriefcaseIcon },
                   { label: "Completed Projects", value: "20+", icon: CheckBadgeIcon },
@@ -59,28 +60,66 @@ export const AboutSection = () => {
               </div>
             </div>
 
-            <div className="w-full md:w-1/2 relative">
-              <div className="aspect-square rounded-3xl overflow-hidden border border-border/50 relative group bg-muted">
-                <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-purple-500/20 mix-blend-overlay z-10 transition-opacity duration-500 group-hover:opacity-0" />
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
+              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="w-full lg:w-1/2 relative flex justify-center mt-12 lg:mt-0"
+            >
+              {/* Decorative Background Elements */}
+              <div className="absolute inset-0 max-w-[400px] mx-auto hidden md:block">
+                <div className="absolute top-10 -right-4 w-full h-full bg-linear-to-tr from-primary/30 to-purple-500/30 rounded-[2.5rem] rotate-3 opacity-50 blur-sm mix-blend-overlay animate-pulse" />
+                <div className="absolute -bottom-4 -left-4 w-full h-full border-2 border-primary/20 rounded-[2.5rem] -rotate-3 transition-transform duration-500" />
+              </div>
+
+              {/* Main Image Container */}
+              <div className="relative w-full max-w-[400px] aspect-4/5 md:aspect-square rounded-[2.5rem] overflow-hidden border-4 border-background shadow-2xl bg-muted group z-10">
+                <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-purple-500/20 mix-blend-overlay z-10 transition-opacity duration-700 group-hover:opacity-0 pointer-events-none" />
                 <img 
-                  src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1080&auto=format&fit=crop" 
-                  alt="Hasyim Coding" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src={aboutImage} 
+                  alt="Hasyim" 
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                  style={{ objectPosition: "center bottom" }}
                 />
               </div>
               
+              {/* Floating Badge 1 */}
+              <motion.div 
+                animate={{ y: [0, -10, 0] }} 
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -left-2 sm:-left-6 top-10 sm:top-1/4 bg-background/90 backdrop-blur-xl p-3 sm:p-4 rounded-2xl border border-border shadow-2xl flex items-center gap-3 sm:gap-4 z-20 scale-90 sm:scale-100 origin-top-left"
+              >
+                <div className="bg-primary/10 p-3 rounded-full text-primary">
+                  <CodeBracketIcon className="w-6 h-6" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground font-medium">Developer</p>
+                  <p className="font-bold text-foreground">Fullstack</p>
+                </div>
+              </motion.div>
+
+              {/* Floating Badge 2 */}
+              <motion.div 
+                animate={{ y: [0, 15, 0] }} 
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                className="absolute -right-2 sm:-right-6 bottom-10 sm:bottom-1/4 bg-background/90 backdrop-blur-xl p-3 sm:p-4 rounded-2xl border border-border shadow-2xl flex items-center gap-3 sm:gap-4 z-20 scale-90 sm:scale-100 origin-bottom-right"
+              >
+                <div className="flex -space-x-3">
+                  <div className="w-12 h-12 rounded-full border-2 border-background flex items-center justify-center bg-primary text-primary-foreground font-bold shadow-sm text-lg">
+                    3+
+                  </div>
+                </div>
+                <div>
+                  <p className="text-sm font-bold">Years</p>
+                  <p className="text-xs text-muted-foreground">Experience</p>
+                </div>
+              </motion.div>
+
               {/* Decorative blurs */}
-              <motion.div 
-                animate={{ y: [0, -20, 0], opacity: [0.5, 1, 0.5] }} 
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/20 rounded-full blur-2xl -z-10" 
-              />
-              <motion.div 
-                animate={{ y: [0, 20, 0], opacity: [0.5, 1, 0.5] }} 
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute -top-8 -right-8 w-32 h-32 bg-purple-500/20 rounded-full blur-2xl -z-10" 
-              />
-            </div>
+              <div className="absolute -bottom-20 -left-10 w-48 h-48 bg-primary/20 rounded-full blur-[80px] -z-10 pointer-events-none" />
+              <div className="absolute -top-20 -right-10 w-48 h-48 bg-purple-500/20 rounded-full blur-[80px] -z-10 pointer-events-none" />
+            </motion.div>
           </div>
 
           {/* Tech Stack Slider */}
