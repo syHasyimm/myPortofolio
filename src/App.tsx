@@ -1,6 +1,7 @@
 import { Navbar } from "./components/Navbar"
 import { HeroSection } from "./components/sections/HeroSection"
 import { AboutSection } from "./components/sections/AboutSection"
+import { JourneySection } from "./components/sections/JourneySection"
 import { PortfolioSection } from "./components/sections/PortfolioSection"
 import { ContactSection } from "./components/sections/ContactSection"
 import { Footer } from "./components/Footer"
@@ -12,6 +13,7 @@ function App() {
       <main>
         <HeroSection />
         <AboutSection />
+        <JourneySection />
         <PortfolioSection />
         <ContactSection />
       </main>
