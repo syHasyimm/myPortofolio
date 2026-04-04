@@ -48,13 +48,12 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-outfit tracking-tight mb-4 sm:mb-6 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold font-outfit tracking-tight mb-4 sm:mb-6 leading-tight whitespace-nowrap"
             >
               Hai, Saya{" "}
               <span className="bg-clip-text text-transparent bg-linear-to-r from-primary to-purple-500">
                 Syarif Hasyim
               </span>
-              <br />
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
