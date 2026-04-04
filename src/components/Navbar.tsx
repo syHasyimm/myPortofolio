@@ -33,8 +33,15 @@ export const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#home" className="text-2xl font-bold font-outfit tracking-tighter">
-          Hasyim<span className="text-primary">.</span>
+        <a
+          href="#home"
+          className="text-2xl md:text-3xl font-extrabold font-outfit tracking-tight flex items-baseline gap-1 hover:opacity-90 transition-opacity"
+        >
+          <span className="text-foreground">Syarif</span>
+          <span className="bg-clip-text text-transparent bg-linear-to-r from-primary to-purple-500">
+            Hasyim
+          </span>
+          <span className="w-2 h-2 rounded-full bg-primary ml-0.5"></span>
         </a>
 
         {/* Desktop Nav */}

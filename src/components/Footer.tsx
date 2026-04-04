@@ -9,18 +9,22 @@ export const Footer = () => {
           <div className="text-center md:text-left">
             <a
               href="#home"
-              className="text-3xl font-bold font-outfit tracking-tighter inline-block mb-4"
+              className="text-3xl font-extrabold font-outfit tracking-tight flex items-baseline gap-1 md:justify-start justify-center hover:opacity-90 transition-opacity mb-4"
             >
-              Hasyim<span className="text-primary">.</span>
+              <span className="text-foreground">Syarif</span>
+              <span className="bg-clip-text text-transparent bg-linear-to-r from-primary to-purple-500">
+                Hasyim
+              </span>
+              <span className="w-2.5 h-2.5 rounded-full bg-primary ml-0.5"></span>
             </a>
-            <p className="text-muted-foreground max-w-sm">
-              Crafting digital experiences with precision and passion. Let's
-              create something amazing together.
+            <p className="text-muted-foreground max-w-sm mx-auto md:mx-0">
+              Membangun pengalaman digital dengan presisi dan sepenuh hati. Mari
+              ciptakan sesuatu yang luar biasa bersama.
             </p>
           </div>
 
           <div className="text-center md:text-right">
-            <h4 className="font-semibold mb-4">Want to Collaborate?</h4>
+            <h4 className="font-semibold mb-4">Ingin Berkolaborasi?</h4>
             <div className="flex justify-center md:justify-end gap-4">
               <a
                 href="https://www.instagram.com/sy_hasyim/"
@@ -59,9 +63,9 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-border/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Hasyim. All rights reserved.</p>
-          <p className="flex items-center">
-            Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> globally.
+          <p>&copy; {new Date().getFullYear()} Syarif Hasyim. Hak cipta dilindungi.</p>
+          <p className="flex items-center justify-center md:justify-start mt-2 md:mt-0">
+            Dibuat dengan <Heart className="h-4 w-4 mx-1 text-red-500" /> di Indonesia.
           </p>
         </div>
       </div>
