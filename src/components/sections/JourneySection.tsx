@@ -73,7 +73,7 @@ export const JourneySection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold font-outfit mb-6">
-            This is a long journey of my life
+            This is My Story
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-8" />
           <p className="text-muted-foreground mt-4 max-w-4xl mx-auto leading-relaxed text-left md:text-center">

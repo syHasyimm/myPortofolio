@@ -40,7 +40,7 @@ export const HeroSection = () => {
               className="mb-8 inline-block"
             >
               <span className="px-4 py-2 rounded-full border bg-background/50 backdrop-blur text-sm font-medium border-primary/20 text-primary">
-                Available for Work
+                Siap Menerima Project
               </span>
             </motion.div>
 
@@ -50,7 +50,7 @@ export const HeroSection = () => {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-outfit tracking-tight mb-4 sm:mb-6 leading-tight"
             >
-              Hi, I'm{" "}
+              Hai, Saya{" "}
               <span className="bg-clip-text text-transparent bg-linear-to-r from-primary to-purple-500">
                 Syarif Hasyim
               </span>
@@ -106,7 +106,7 @@ export const HeroSection = () => {
                     "rounded-full shadow-lg shadow-primary/25 h-12 px-8",
                 })}
               >
-                Let's Talk <ArrowRight className="ml-2 h-4 w-4" />
+                Mari Bicara <ArrowRight className="ml-2 h-4 w-4" />
               </motion.a>
 
               <motion.a
@@ -122,7 +122,7 @@ export const HeroSection = () => {
                   className: "rounded-full h-12 px-8",
                 })}
               >
-                Download CV <Download className="ml-2 h-4 w-4" />
+                Unduh CV <Download className="ml-2 h-4 w-4" />
               </motion.a>
             </motion.div>
 

@@ -196,12 +196,12 @@ export const PlaylistSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold font-outfit mb-4">
-            Vibe Check
+            Daftar Putar
           </h2>
           <div className="w-20 h-1 bg-[#1DB954] mx-auto rounded-full mb-6" />
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            My favorite tracks that keep me in the zone while coding. Feel free
-            to explore the playlist.
+            Lagu-lagu favorit yang membuat saya tetap tenang dalam kondisi
+            apapun. Silakan dengarkan daftar putarnya.
           </p>
         </motion.div>
 
@@ -218,7 +218,7 @@ export const PlaylistSection = () => {
               {isPlaying && (
                 <span className="w-2 h-2 rounded-full bg-[#1DB954] animate-pulse" />
               )}
-              {isPlaying ? "Now Playing" : "Paused"}
+              {isPlaying ? "Sedang Diputar" : "Dijeda"}
             </div>
 
             {/* Cover Art */}
@@ -315,9 +315,9 @@ export const PlaylistSection = () => {
           >
             <div className="hidden md:grid grid-cols-[16px_1fr_1fr_50px] gap-4 py-2 px-4 border-b border-border text-sm font-medium text-muted-foreground tracking-wider uppercase mb-2">
               <div className="text-center">#</div>
-              <div>Title</div>
+              <div>Judul</div>
               <div>Album</div>
-              <div className="text-right">Time</div>
+              <div className="text-right">Waktu</div>
             </div>
 
             <div className="flex flex-col gap-2">

@@ -31,7 +31,7 @@ export const AboutSection = () => {
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center mb-20">
             <div className="w-full lg:w-1/2">
               <h2 className="text-3xl md:text-5xl font-bold font-outfit mb-6">
-                About Me
+                Tentang Saya
               </h2>
               <div className="w-20 h-1 bg-primary mb-8 rounded-full" />
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
@@ -50,22 +50,22 @@ export const AboutSection = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   {
-                    label: "Experience",
-                    value: "3+ Years",
+                    label: "Pengalaman",
+                    value: "3+ Tahun",
                     icon: BriefcaseIcon,
                   },
                   {
-                    label: "Completed Projects",
+                    label: "Proyek Selesai",
                     value: "20+",
                     icon: CheckBadgeIcon,
                   },
                   {
-                    label: "Technologies",
+                    label: "Teknologi",
                     value: "React, Node.js, Laravel",
                     icon: CodeBracketIcon,
                   },
                   {
-                    label: "Design",
+                    label: "Desain",
                     value: "Figma, Canva, Adobe Photoshop",
                     icon: PaintBrushIcon,
                   },
@@ -127,7 +127,7 @@ export const AboutSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground font-medium">
-                    Developer
+                    Pengembang
                   </p>
                   <p className="font-bold text-foreground">Fullstack</p>
                 </div>
@@ -150,8 +150,8 @@ export const AboutSection = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm font-bold">Years</p>
-                  <p className="text-xs text-muted-foreground">Experience</p>
+                  <p className="text-sm font-bold">Tahun</p>
+                  <p className="text-xs text-muted-foreground">Pengalaman</p>
                 </div>
               </motion.div>
 
@@ -164,7 +164,7 @@ export const AboutSection = () => {
           {/* Tech Stack Slider */}
           <div className="mt-12 text-center">
             <h3 className="text-xl font-medium text-muted-foreground mb-10 font-outfit tracking-wide">
-              POWERING MY PROJECTS
+              TEKNOLOGI YANG SAYA GUNAKAN
             </h3>
 
             {/* The wrapper must hide overflow and prevent flex wrapping */}
