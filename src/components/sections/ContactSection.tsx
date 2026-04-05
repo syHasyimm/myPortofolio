@@ -148,7 +148,7 @@ export const ContactSection = () => {
             className="w-full lg:w-2/3"
           >
             {/* Gradient border wrapper */}
-            <div className="relative rounded-3xl p-[1px] bg-linear-to-br from-primary/50 via-purple-500/30 to-transparent">
+            <div className="relative rounded-3xl p-px bg-linear-to-br from-primary/50 via-purple-500/30 to-transparent">
               <div className="bg-background/80 backdrop-blur-xl p-8 md:p-10 rounded-3xl relative overflow-hidden">
                 {/* Subtle inner glow */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[80px] pointer-events-none" />
@@ -158,10 +158,15 @@ export const ContactSection = () => {
                   Kirim Pesan
                 </h3>
                 <p className="text-muted-foreground text-sm mb-8 relative z-10">
-                  Isi formulir di bawah dan saya akan segera menghubungi Anda kembali.
+                  Isi formulir di bawah dan saya akan segera menghubungi Anda
+                  kembali.
                 </p>
 
-                <form ref={formRef} className="space-y-6 relative z-10" onSubmit={handleSubmit}>
+                <form
+                  ref={formRef}
+                  className="space-y-6 relative z-10"
+                  onSubmit={handleSubmit}
+                >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Name Field */}
                     <div className="group relative">

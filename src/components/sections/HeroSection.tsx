@@ -7,6 +7,7 @@ import { buttonVariants } from "../ui/button";
 import { TypeAnimation } from "react-type-animation";
 import { FaInstagram, FaYoutube, FaFacebook, FaGithub } from "react-icons/fa";
 import heroImage from "../../assets/Hero-man.jpeg";
+import cvFile from "../../assets/CV - SYARIF HASYIM.pdf";
 
 export const HeroSection = () => {
   return (
@@ -111,8 +112,8 @@ export const HeroSection = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/assets/cv.pdf"
-                download="Hasyim-CV.pdf"
+                href={cvFile}
+                download="CV - SYARIF HASYIM.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={buttonVariants({
